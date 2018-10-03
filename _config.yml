@@ -8,7 +8,7 @@ repo: simple-themes/splash-theme
 # social links - optional
 mail:  
 twitter_username: 
-github_username: 
+github_username: simple-themes
 # theme - fill out if you want to change colors
 
 theme_bg: "https://images.unsplash.com/photo-1468931467769-06a09c69aad3?&w=1050&q=80" # url to the background of every page
