@@ -15,7 +15,7 @@
   <body>
     <nav>
     {% if site.avatar %}<a class="logo" href='{{ "/" | relative_url }}'><img src="{{ site.avatar }}" width="75" height="75" alt="{{ site.author }}"></a>{% endif %}
-      {% if site.pages %}
+      {% if site.pages.size > 1 %}
       <a href="{{ "/" | relative_url }}">Home</a> 
       {%- for page in site.pages -%}
        {%- if page.title -%}
@@ -24,7 +24,9 @@
         {% endunless %}
        {%- endif -%}
       {%- endfor -%}
+      {% if site.posts.size > 0 %}
       <a href="#search">Search</a>
+      {% endif %}
       {% endif %}
     </nav>
     <main>
@@ -42,7 +44,7 @@
        <a href="https://github.com/{{ site.github_username }}">Github</a>
       {%- endif -%}
       {%- if site.rss -%}
-        {% if site.posts %}
+        {% if site.posts.size > 0 %}
        <a href='{{ "feed.xml" | relative_url }}'>RSS</a>
         {% endif %}
       {%- endif -%}
