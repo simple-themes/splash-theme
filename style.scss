@@ -1,7 +1,7 @@
 ---
 ---
 
-$img: {{ site.theme_bg }};
+$img: "{{ site.theme_bg }}";
 $accent: {{ site.theme_accent }};
 $text: {{ site.theme_tags }};
 
