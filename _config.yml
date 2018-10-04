@@ -23,7 +23,7 @@ paginate: 15
 
 # change this if you are on a project repo, not a username.github.io repo
 # for example, if your repo is hello-world, set this to hello-world
-path: 
+path: splash-theme
 
 # Ignore the rest of this file unless you want to change more settings
 rss: rss
